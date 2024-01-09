@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul</title>
+    <link rel="stylesheet" href="{% static '/css/skills.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="portfolio-container">
+        <ul class="navlist">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}"class="active">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="https://drive.google.com/file/d/1qpGbVk0urac92i34FkOIuptiKYrxpbPP/view?usp=drivesdk">My Resume</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/html.png' %}" class="skill-icon">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <p>I possess strong proficiency in HTML, with hands-on experience in crafting well-structured web pages. My expertise extends to utilizing HTML5 for the latest features and employing semantic markup to create meaningful content during development. I am skilled in leveraging various HTML tags and attributes, ensuring effective communication between content and browsers </p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/css.png' %}" class="skill-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <p>I have a solid command of CSS, showcasing my ability to style and enhance web pages. My experience extends to creating visually appealing and responsive designs through the effective use of CSS properties, and layouts. I am adept at handling cross-browser compatibility issues and ensuring a seamless integration of CSS with HTML for a cohesive and interactive user experience</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/bootstrap.png' %}" class="skill-icon">
+                        </div>
+                        <h3>Bootstrao</h3>
+                    </div>
+                    <p>I am proficient in Bootstrap, harnessing its power to expedite the development of responsive and visually appealing web applications. With a strong grasp of Bootstrap's grid system, components, and utility classes, I have successfully implemented consistent and user-friendly designs. My expertise extends to seamlessly integrating Bootstrap with HTML and CSS</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/python.gif' %}" class="skill-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                    <p>I have a strong command of Python, leveraging its versatility to develop efficient and scalable solutions. With hands-on experience in various Python frameworks and libraries, I excel in crafting robust and dynamic applications and automating tasks. My proficiency extends to working with data using Python for analysis and visualization. Additionally, I am adept at writing clean, easy to understand and maintainable code, ensuring the delivery of high-quality software solutions</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/django.png' %}" class="skill-icon">
+                        </div>
+                        <h3>django</h3>
+                    </div>
+                    <p>I possess expertise in Django, utilizing its power to build dynamic and feature-rich web applications. My experience includes Django's Model-View-Controller (MVC) architecture, built-in features for authentication, routing, and database interactions, ensuring the development of robust and maintainable web applications. My familiarity with Django's templating engine and ORM (Object-Relational Mapping) further enhances my ability to deliver efficient and seamless solutions.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/api.png' %}" class="skill-icon">
+                        </div>
+                        <h3>Django Rest Framework</h3>
+                    </div>
+                    <p>I am proficient in DRF, to develop robust and scalable RESTful APIs. My expertise includes designing and implementing API endpoints, authentication mechanisms, and serialization processes. With hands-on experience in handling CRUD operations and ensuring secure data transmission, creating efficient and well-documented APIs. Additionally, I excel in leveraging Django Rest Framework's features for viewsets to deliver comprehensive solutions for applications</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/git.gif' %}" class="skill-icon">
+                        </div>
+                        <h3>Git</h3>
+                    </div>
+                    <p>I have a strong command of Git and GitHub, utilizing these version control systems to efficiently manage and collaborate on software projects. My expertise includes creating and managing repositories, branching strategies, and resolving merge conflicts. I am proficient in utilizing Git for tracking changes, enabling seamless collaboration among team members. Additionally, my experience with GitHub extends to leveraging its features for issue tracking, pull requests, and continuous integration, ensuring a streamlined and collaborative development workflow</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/sql.png' %}" class="skill-icon">
+                        </div>
+                        <h3>SQL</h3>
+                    </div>
+                    <p>I am proficient in MySQL, showcasing my expertise in designing and managing relational databases. My skills include creating efficient database schemas, writing optimized queries, and ensuring data integrity. With hands-on experience in handling complex database operations, I excel in performance tuning and optimization. Additionally, my familiarity with MySQL includes implementing security measures, managing user access, and executing database migrations, contributing to the development of robust and scalable data-driven applications</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="{% static 'images/aws.png' %}" class="skill-icon">
+                        </div>
+                        <h3>AWS Deployment</h3>
+                    </div>
+                    <p>I have a comprehensive understanding of Amazon Web Services (AWS), leveraging its cloud computing services to design and deploy scalable and reliable solutions. My expertise includes working with AWS infrastructure services such as EC2, efficient cloud-based architectures. I am proficient in configuring and managing AWS resources and optimizing performance. Additionally, my experience extends to utilizing AWS services for serverless computing, storage, and networking, contributing to the development of resilient and cost-effective cloud solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

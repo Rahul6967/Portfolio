@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #252626;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.navlist li a::after, .navlist .active::after{
+    content:"";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+}
+.about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.about-col-1{
+    flex-basis: 30%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 25px;
+    height: 90%;
+
+    border: .2rem solid white;
+    box-shadow: 0 0 1rem #fff,
+    inset 0 0 .5rem #fff,
+    0 0 1rem #3877ff,
+    inset 0 0 1rem #3877ff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff;
+}
+.about-col-2{
+    flex-basis: 65%;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 400px;
+    color: #5db9ee;
+}
+.pstyle{
+    color: #fff;
+}
+.mystory{
+    color: #5db9ee;
+    font-size: 25px;
+    padding-top: .5rem;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px o 40px;
+    margin-top: 1rem;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5db9ee;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+}
+.tab-contents ul li span{
+    color: #fff;
+    font-size: 14px;
+
+}
+
+

@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="portfolio-container">
+        <ul class="navlist">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}" class="active">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href="https://drive.google.com/file/d/1qpGbVk0urac92i34FkOIuptiKYrxpbPP/view?usp=drivesdk">My Resume</a></li>
+        </ul>
+    
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="{% static 'images/about1.jpeg' %}">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Rahul, a Full Stack Developer</h1>
+                    <p class="pstyle">As a developer, codes and maintain web-applicatins using django, also familiar with front-end technologies.</p>
+                    <h3 class="mystory">My Story</h3>
+                    <p class="pstyle">It all started in my 1st of college when I developed an interest in coding. After researching career opportunities in coding, I chose coding as my future. I began learning the C language from an ex-programmer, followed by Visual Basic 6.0, and then delved into Python along with additional skills like MySQL. The story continues to this day as I progress on my journey towards becoming a programmer</p>
+                
+                    <div class="tab-titles">
+                        <h3 class="tab-links active-link">Education</h3>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>2023</span><br>Advance Python with Django: From TCA Gurugram</li>
+                            <li><span>2022</span><br>C language, Visual Basic 6.0, Basic Python, MySQL Diploma: From Sunshine Campus (Kharkhoda) </li>
+                            <li><span>2020</span><br>12th: PRATAP SINGH MEMORIAL SR SEC SCHOOL (Kharkhoda) </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

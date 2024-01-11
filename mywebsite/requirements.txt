@@ -1,0 +1,7 @@
+asgirf==3.6.0
+Django==4.2.9
+djangorestframework==3.14.0
+httpie==3.2.2
+imagesize
+python==3.9.13
+virtualenv==20.23.0
